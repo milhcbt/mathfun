@@ -27,6 +27,6 @@ extern "C"
 {
 	JNIEXPORT jstring JNICALL Java_com_codencare_mathfun_android_HelloJni_stringFromJNI(JNIEnv* env, jobject thiz)
 	{
-		return env->NewStringUTF("Hello android from c++ at my thinkpad");
+		return env->NewStringUTF("Hello android from c++ at my thinkpad duos");
 	}
 }
