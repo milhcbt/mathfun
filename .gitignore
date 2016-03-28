@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 bin/
 gen/
 obj/
 libs/*/*.so
 
-=======
 # Built application files
 *.apk
 *.ap_
@@ -37,4 +35,3 @@ proguard/
 
 # Android Studio captures folder
 captures/
->>>>>>> 2ae718de9aa44bdad6180682275300420ea845fd
