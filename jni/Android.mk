@@ -19,9 +19,13 @@ include $(CLEAR_VARS)
 LOCAL_CPP_EXTENSION := .cpp .cc
 LOCAL_MODULE    := hello-jni
 LOCAL_SRC_FILES := hello-jni.cpp
+LOCAL_LDLIBS    := -llog -landroid -lEGL -lGLESv2
+LOCAL_STATIC_LIBRARIES := android_native_app_glue
+
 
 ifeq ($(TARGET_ARCH_ABI),x86)
     LOCAL_CFLAGS += -ffast-math -mtune=atom -mssse3 -mfpmath=sse
 endif
 
 include $(BUILD_SHARED_LIBRARY)
+$(call import-module,android/native_app_glue)
